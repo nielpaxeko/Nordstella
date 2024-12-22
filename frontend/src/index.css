@@ -1,0 +1,175 @@
+:root {
+  --hp-font: "hp";
+  --primary-font: 'playfair', sans-serif;
+  --secondary-font: 'lato', sans-serif;
+  --berry: #921A40;
+  --pink: #B83B5E;
+  --kiss: #D9ABAB;
+  --sand: #F4D9D0;
+  --purple: #800059;
+  --orange: #FF9500;
+  --warm: #F08A5D;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "hp";
+  src: url(/HARRYP__.TTF);
+}
+
+@font-face {
+  font-family: "playfair";
+  src: url(/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "lato";
+  src: url(/Lato-Regular.ttf);
+}
+
+.profile-picture {
+  border: 1px solid black;
+}
+
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--sand);
+}
+
+section {
+  padding: 60px 0;
+  min-height: 60vh;
+}
+
+/* Navbar */
+.navbar {
+  background: var(--berry);
+}
+
+#main-nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+
+.navbar-brand {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.nav-icon {
+  font-size: 1.3rem;
+}
+
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-link:hover {
+  color: var(--pink);
+}
+
+/* Buttons */
+.btn {
+  background: var(--berry);
+  color: white;
+  border: 1px solid var(--berry);
+  border-radius: 25px;
+
+}
+
+.btn:hover {
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1.020);
+  background-color: white;
+  color: var(--berry);
+  border: 1px solid var(--berry);
+}
+
+.btn-secondary {
+  background-color: var(--warm);
+  color: white;
+  border: 1px solid var(--warm);
+  border-radius: 25px;
+}
+
+.btn-secondary:hover {
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1.020);
+  background-color: white;
+  color: var(--warm);
+  border: 1px solid var(--warm);
+}
+
+.btn-pink {
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+
+}
+
+.btn-pink:hover {
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1.020);
+  background-color: white;
+  color: var(--pink);
+  border: 1px solid var(--pink);
+}
+
+.btn-kiss {
+  background: var(--kiss);
+  color: white;
+  border: 1px solid var(--kiss);
+  border-radius: 25px;
+
+}
+
+.btn-kiss:hover {
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1.020);
+  background-color: white;
+  color: var(--kiss);
+  border: 1px solid var(--kiss);
+}
+
+.hp {
+  font-family: var(--hp-font);
+}
+
+.primary {
+  font-family: var(--primary-font);
+}
+
+.secondary {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.royal {
+  color: var(--royal);
+}
+
+
+@media only screen and (max-width: 768px) {
+  #main-nav {
+      justify-content: start;
+  }
+
+  .navbar-nav {
+      align-items: start;
+  }
+}

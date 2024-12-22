@@ -1,0 +1,33 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+   // Allow read access to all users
+    match /users/{userID} {
+      allow read: if true;  // Allow everyone to read user profiles
+      allow write: if request.auth != null;
+    }
+    
+    // Allow read and write access to authenticated users for posts
+    match /posts/{postID} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow update, delete: if request.auth.uid == resource.data.userID;
+    }
+    
+     match /postLikes/{likeID} {
+      allow read: if request.auth != null;  // Allow read access to likes for authenticated users
+      allow write: if request.auth != null; // Allow write access to likes for authenticated users
+    	allow delete: if request.auth != null && resource.data.userID == request.auth.uid;
+    }
+    match /postComments/{commentID} {
+  		allow read: if request.auth != null; // Allow read access to comments for authenticated users
+  		allow write: if request.auth != null; // Allow write access to comments for authenticated users
+  		allow create: if request.auth.uid == resource.data.userID;
+  		allow update, delete: if request.auth.uid == resource.data.userID;
+		}
+     match /comments/{commentID} {
+      allow read: if request.auth != null; // Allow read access to comments for authenticated users
+    }
+    
+  }
+}

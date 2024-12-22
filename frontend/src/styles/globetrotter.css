@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+#map {
+    height: 650px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.wanderlog-section {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#countrySearchSection,
+#citySearchSection {
+    width: 100%;
+}
+
+#globe-welcome {
+    color: #921A40;
+    text-align: center;
+}
+
+#trotter-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    border-radius: 20px 20px 0px 0px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tab.active {
+    background-color: #921A40;
+    color: white;
+}
+
+#showRoutesLabel {
+    margin-right: 5px;
+}
+
+#countrySearch,
+#citySearch {
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 50%;
+    box-sizing: border-box;
+    margin-right: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Travel Buttons */
+button {
+    padding: 10px;
+    width: 150px;
+    margin-right: 5px;
+    font-weight: bold;
+    border-radius: 40px;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.visited-btn {
+    background-color: #FF9500;
+    border: 1px solid #FF9500;
+    color: white;
+}
+
+.visited-btn:hover {
+    background-color: white;
+    color: #FF9500;
+}
+
+.wanted-btn {
+    background-color: #5A00FF;
+    border: 1px solid #5A00FF;
+    color: white;
+}
+
+.wanted-btn:hover {
+    background-color: white;
+    color: #5A00FF;
+}
+
+.otherBtn {
+    background-color: #921A40;
+    border: 1px solid #921A40;
+    color: white;
+    min-width: 100px;
+}
+
+.otherBtn:hover {
+    background-color: white;
+    color: #921A40;
+}
+
+#toggleRailwayLayer {
+    padding: 0px;
+    margin: 0px;
+    margin-right: 5px;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    #trotter-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #countrySearch,
+    #citySearch {
+        width: 100%;
+    }
+}

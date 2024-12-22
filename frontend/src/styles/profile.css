@@ -1,0 +1,60 @@
+.profile-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 8%;
+}
+
+.profile-card {
+    width: 600px;
+    max-width: 95%;
+    overflow: hidden;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-card .profile-picture {
+    height: 150px;
+    width: 150px;
+    border: 5px solid var(--pink);
+}
+
+
+.profile-header,
+.profile-footer {
+    background-color: var(--berry);
+}
+
+.profile-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.card-title {
+    margin: 0;
+}
+
+
+
+/* Edit Profile Page CSS */
+
+.edit-profile-container {
+    padding: 50px;
+    width: 80%;
+}
+
+.edit-form {
+    margin-bottom: 10px;
+}

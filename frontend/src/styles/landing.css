@@ -1,0 +1,230 @@
+#header {
+  background-image: url('../assets/blink-hero-section.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 500px;
+}
+
+.header-text {
+  color: var(--berry);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.section-title {
+  color: var(--berry);
+  font-size: 2rem;
+}
+
+.section-subtitle {
+  color: var(--orange);
+  font-size: 1.5rem;
+}
+
+/* features */
+
+.feature-title {
+  color: var(--berry);
+}
+
+.feature-title h3 {
+  font-size: 1.75rem;
+}
+
+.feature-title p {
+  font-size: 1.2rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform 0.3s;
+  gap: 15px;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.rounded-feature {
+  background-color: var(--berry);
+  min-width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  color: white;
+}
+
+.feature-text {
+  flex-grow: 1;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-text h4 {
+  color: var(--berry);
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.feature-text p {
+  color: var(--orange);
+  margin: 0;
+  font-size: 1rem;
+}
+
+.bold {
+  color: var(--berry);
+  font-weight: bold;
+}
+
+i {
+  font-size: 40px;
+}
+
+.featured-globe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 500px;
+}
+
+
+/* Reviews  */
+#reviews {
+  background-color: var(--berry);
+  border-bottom: 5px solid var(--berry);
+  border-top: 5px solid var(--berry);
+}
+
+.testimonial {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+}
+
+.testimonial-pic {
+  height: 60%;
+  margin: 10px, 20px;
+  border-radius: 50%;
+  border: 3px solid var(--orange);
+}
+.testimonial-text {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  flex-direction: column;
+  padding: 5px;
+  margin: 5px;
+  color: var(--orange);
+}
+
+.testimonial p {
+  margin-bottom: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--berry);
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.carousel-indicators {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.carousel-indicators button {
+  background-color: var(--berry);
+  opacity: 0.5;
+}
+
+.carousel-indicators button.active {
+  opacity: 1;
+}
+
+nav {
+  background-color: var(--berry);
+  align-items: center;
+}
+
+.navbar-brand {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+/* Guides */
+.card-guide {
+  height: 350px;
+}
+
+.guide-header {
+  padding: 0;
+  overflow: hidden;
+}
+.card-header-image {
+  height: 150px;
+  background-size: cover;
+  background-position: cover;
+}
+
+
+/* FAQ */
+.accordion-button {
+  color: var(--orange) !important;
+  background-color: var(--berry) !important;
+}
+
+.accordion-button:focus {
+  color: var(--berry) !important;
+  background-color: var(--orange) !important;
+}
+
+/* Just colors */
+.berry {
+  background-color: var(--berry);
+}
+
+.bg-light-brown {
+  background-color: #ebeaea;
+}
+
+.bg-dark-brown {
+  background-color: #beada7;
+}
+
+/* Small screens */
+
+@media only screen and (max-width: 768px) {
+  .testimonial-text {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-subtitle {
+    width: 75%;
+    margin: auto;
+    font-size: 1.25rem;
+  }
+  .card-guide {
+    height: 325px;
+  }
+}

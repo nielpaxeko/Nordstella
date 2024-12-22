@@ -1,0 +1,58 @@
+nielpaxeko@Edgars-MacBook-Pro Nordstella % firebase init
+(node:5476) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/nielpaxeko/Desktop/Programming/Nordstella
+
+? Which Firebase features do you want to set up for this directory? Press 
+Space to select features, then Enter to confirm your choices. Firestore: 
+Configure security rules and indexes files for Firestore, Storage: Configure
+ a security rules file for Cloud Storage
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add, 
+but for now we'll just set up a default project.
+
+? Please select an option: Use an existing project
+? Select a default Firebase project for this directory: nordstella 
+(Nordstella)
+i  Using project nordstella (Nordstella)
+
+=== Firestore Setup
+
+Firestore Security Rules allow you to define how and when to allow
+requests. You can keep these rules in your project directory
+and publish them with firebase deploy.
+
+? What file should be used for Firestore Rules? firestore.rules
+
+Firestore indexes allow you to perform complex queries while
+maintaining performance that scales with the size of the result
+set. You can keep index definitions in your project directory
+and publish them with firebase deploy.
+
+? What file should be used for Firestore indexes? firestore.indexes.json
+
+=== Storage Setup
+
+Firebase Storage Security Rules allow you to define how and when to allow
+uploads and downloads. You can keep these rules in your project directory
+and publish them with firebase deploy.
+
+? What file should be used for Storage Rules? storage.rules
+✔  Wrote storage.rules
+
+i  Writing configuration info to firebase.json...
+i  Writing project information to .firebaserc...
+
+✔  Firebase initialization complete!
